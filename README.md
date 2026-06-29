@@ -1,1 +1,5 @@
 # creador-de-contrase-as-seguras
+NOMBRE: CHACAGUASAY RICARDO
+OBJETIVO: Desarrollar una aplicación que genere cadenas de caracteres aleatorias y criptográficamente seguras. El software debe permitir al usuario personalizar la longitud y los componentes de la contraseña (mayúsculas, minúsculas, números, símbolos) para adaptarse a los requisitos de seguridad de distintas plataformas, garantizando que el proceso ocurra de manera local y segura.
+DESCRIPCION DE FUNCIONALIDAD: El sistema es una herramienta automatizada que genera contraseñas de alta seguridad personalizadas basándose en los requerimientos del usuario (longitud y tipos de caracteres). Tras recopilar estas preferencias, el programa construye un banco de datos dinámico, utiliza un ciclo optimizado y algoritmos de aleatoriedad para estructurar la contraseña, y la copia automáticamente al portapapeles del sistema operativo. Esto permite al usuario disponer de una clave robusta al instante, lista para ser pegada (Ctrl + V) en cualquier plataforma de forma segura y sin riesgo de transcripción errónea.
+Fecha 28/06/2026
