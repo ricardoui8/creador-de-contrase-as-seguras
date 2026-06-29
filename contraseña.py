@@ -1,33 +1,28 @@
-********* CREADOR SEGURO DE CONTRASEÑAS *********
+#********* CREADOR SEGURO DE CONTRASEÑAS *********
 
 import random
 
+caracteres = int(input("Ingrese el número de caracteres: ").lower())
+numeros = input("¿Desea que su contraseña contenga números? (si/no): ").lower()
+mayusculas = input("¿Desea que su contraseña tenga mayúsculas? (si/no): ").lower()
+caracterespecial = input("¿Desea que su contraseña tenga caracteres especiales? (si/no); ").lower()
 
-caracteres = int(input("Ingrese el número de caracteres: "))
-numeros = input("¿Desea que su contraseña contenga números? (si/no): ")
-mayusculas = input("¿Desea que su contraseña tenga mayúsculas? (si/no): ")
-caracterespecial = input("¿Desea que su contraseña tenga caracteres especiales? (si/no); ")
+bancocaracteres = ("abcdefghijklmnopqrstuvwxyz")
 
-bancocaracteres = "abcdefghijklmnopqrstuvwxyz"
-
-numeros = numeros.lower()
 if numeros == "si":
-    bancocaracteres = bancocaracteres + "0123456789"
+    bancocaracteres = bancocaracteres + ("0123456789")
   
-mayusculas = mayusculas.lower()
 if mayusculas == "si":
-    bancocaracteres = bancocaracteres + "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    bancocaracteres = bancocaracteres + ("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
 
-caracterespecial = caracterespecial.lower()
 if caracterespecial == "si":
-  bancocaracteres = bancocaracteres + ".,+}{][)(?¡¿#$%&/"
+  bancocaracteres = bancocaracteres + (".,+}{][)(?¡¿#$%&/")
   
 contrasena = ""
-contador = 0
+for i in range(caracteres):
+    caracteres_aleatorio = random.choice(bancocaracteres)
+    contrasena = contrasena+caracteres_aleatorio
+print("Tu contraseña segura es:" + contrasena)
 
-while contador < caracteres:
-    numerocaracteres = len(bancocaracteres)
-    caracteraleatorio = int(random.random() * numerocaracteres)
-    contrasena = contrasena + bancocaracteres[caracteraleatorio]
     contador = contador + 1
-print("Tu contraseña segura es:", contrasena)
+print("Tu contraseña segura es:"+ contrasena)
